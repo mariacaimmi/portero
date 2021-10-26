@@ -1,19 +1,19 @@
 let visor = '', depto = '', m = '';
-var aNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+//var aNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const apretandoNum = (num1) => {  
     if (visor.length < 2) {
-        visor = visor + `${aNum[num1]}`;
+        visor = visor + `${num1}`;
         document.getElementById('piso').value = visor;
     } else if(depto.length < 1){
-        depto = depto + `${aNum[num1]}`;
+        depto = depto + `${num1}`;
          document.getElementById('depto').value = depto;  
     }
 }
 
 
 const borrar = () => {
-    var visor = '', depto = '', m = '';
+    visor = '', depto = '', m = '';
     document.getElementById('piso').value = visor;
     document.getElementById('depto').value = depto;
     document.getElementById('llamado').value = m;
